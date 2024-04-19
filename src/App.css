@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 .App {
   text-align: center;
+  background-color: #fdf2de;
 }
 
 .App-logo {
@@ -14,7 +17,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
