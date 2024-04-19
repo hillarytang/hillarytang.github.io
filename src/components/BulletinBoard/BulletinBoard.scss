@@ -1,0 +1,19 @@
+.bulletinBoardOuter {
+    border: 10px solid rgb(87, 52, 24);
+    background-color: #724826;
+    padding: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .bulletinBoardOuter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
