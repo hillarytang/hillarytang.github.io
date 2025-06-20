@@ -1,17 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import AboutMe from './pages/AboutMe/AboutMe';
+import { NavBar } from './components/NavBar/NavBar';
+import Experience from './pages/Experience/Experience';
+import UnderConstruction from './pages/UnderConstruction/UnderConstruction';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      {/* <header>
+        <NavBar />
+      </header> */}
+      <Routes>
+        <Route path='/' element={<UnderConstruction />}></Route>
+        <Route path='/home' element={<Home />}></Route>
+        <Route path='/about-me' element={<AboutMe />}></Route>
+        <Route path='/experience' element={<Experience />}></Route>
+        <Route path='/gallery' element={<UnderConstruction />}></Route>
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

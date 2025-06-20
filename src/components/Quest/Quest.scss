@@ -1,0 +1,82 @@
+@import '../../index.scss';
+// Text Styling
+.Quest__QuestType {
+    font-family: 'Gafata', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.Quest__QuestTitle {
+    font-family: 'Gafata', sans-serif;
+}
+
+.Quest__Blurb {
+    font-size: large;
+    line-height: 1.5rem;
+}
+
+// Quest__Paper Styling
+.Quest__Paper {
+    background-color: #fbeee0;
+    clip-path: polygon(3% 0, 17% 1%, 20% 0, 27% 2%, 30% 1%, 41% 1%,  47% 2%, 50% 2%, 58% 2%, 63% 1%, 69% 2%, 73% 1%, 76% 1%, 82% 1%, 85% 0, 87% 1%, 89% 0, 98% 1%, 
+                99% 3%, 99% 3%, 99% 6%, 100% 11%, 100% 21%, 99% 28%, 99% 35%, 99% 40%, 100% 43%, 99% 48%, 100% 53%, 100% 57%, 99% 60%, 100% 64%, 99% 72%, 100% 75%, 100% 90%, 99% 94%, 99% 98%, 
+                97% 99%, 89% 100%, 83% 100%, 77% 99%, 72% 100%, 66% 99%, 62% 100%, 59% 99%, 54% 99%, 49% 100%, 46% 99%, 43% 100%, 40% 99%, 38% 100%, 31% 100%, 28% 99%, 25% 99%, 22% 100%, 20% 100%, 13% 99%, 10% 99%, 7% 100%, 4% 99%, 
+                2% 99%, 1% 97%, 0% 94%, 1% 89%, 0% 84%, 1% 81%, 0 76%, 0 71%, 1% 66%, 0% 64%, 0% 59%, 1% 54%, 0% 49%, 0% 40%, 1% 37%, 0% 34%, 1% 29%, 0% 23%, 2% 20%, 1% 17%, 1% 13%, 0 10%,  1% 3%); 
+    color: rgb(34, 30, 30);
+    height: fit-content;
+    min-height: 500px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s ease-in-out;
+    box-shadow: #422800a1 3px 3px 3px 0;
+}
+
+.Quest__Paper:hover {
+    margin-top: -2px;
+    box-shadow: #422800a1 10px 10px 5px 0;
+}
+
+.Quest__Paper h1 {
+    font-size: 24px;
+}
+
+.Quest__Paper h2 {
+    font-size: 32px;
+    margin-bottom:.5rem;
+}
+
+.Quest__Paper img {
+    width: 50%;
+    background-blend-mode: multiply;
+}
+
+.Quest__Pin {
+    --pin-color: #c2c2c2;
+    --pin-dark: #7e7e7e;
+    --pin-light: #e6e6e6;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $pin-color;
+    background: radial-gradient(
+      circle at bottom right,
+      $pin-light,
+      25%,
+      $pin-dark,
+      90%,
+      $pin-color
+    )
+}
+
+@media (max-width: 768px) {
+    .Quest__Paper {
+        width: 90%;
+    }
+}

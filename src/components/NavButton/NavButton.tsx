@@ -1,15 +1,16 @@
 import React from 'react';
-import "./NavButton.scss";
+import './NavButton.scss';
 
 type NavButtonProps ={
     title: string,
     link: string
+    tooltip?: string
 }
 
-export const NavButton = ({ title, link }: NavButtonProps) => {
+export const NavButton = ({ title, link, tooltip }: NavButtonProps) => {
     return (
-        <a href={link}>
-            <button className="navButton">{title}</button>
+        <a href={link} title={tooltip}>
+            <button className='NavButton' title={tooltip}>{title}</button>
         </a>
     )
 }

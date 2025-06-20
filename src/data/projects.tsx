@@ -1,4 +1,4 @@
-export interface projectPotion {
+export type projectPotion = {
     projectName: String,
 }
 

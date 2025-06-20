@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Gafata&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=La+Belle+Aurore&family=Macondo+Swash+Caps&family=Oldenburg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+$background-color: #DCD7C9;
+$wood-color: #d1af90;
+$wood-shading-color: #644d3cc0;
+$wood-text-color: rgb(241, 227, 216);
+$wood-texture: url("../public/assets/woodtexture.svg");
+$pin-color: #c2c2c2;
+$pin-dark: #7e7e7e;
+$pin-light: #e6e6e6;
+$font-quicksand: "Quicksand";
+$font-uncial: "Uncial Antiqua";
+$font-la-belle-aurore: "La Belle Aurore";
+$font-equ-nsw: "Edu NSW ACT Hand Pre";
+$font-Gafata: "Gafata";
+$font-MedievalSharp: "MedievalSharp";
+$font-Macondo: "Macondo Swash Caps";
+$font-oldenburg: "Oldenburg";
+$font-comingsoon: "Coming Soon";
+
+$pic1: url("../public/assets/layer_1_blu.png");
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: $background-color;
+}
+
+p {
+  color: rgb(44, 21, 11);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #094e15;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e944d;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+hr { 
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  background-color: $wood-color;
+  background-image: $wood-texture;
+  background-size: 100%;
+  background-blend-mode: multiply;
+}
+
+// Generic Animations ----------------------------------------------------
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: 1.5s spin;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slideInFromLeft-animation {
+  animation: 1.5s slideInFromLeft;
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.slideInFromRight-animation {
+  animation: 1.5s slideInFromRight;
+}
+
+@keyframes settleDown {
+  0% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.settleDown-animation {
+  animation: 1.5s settleDown;
+}
+
+@keyframes settleIn {
+  0% {
+    transform: translateY(-5%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.settleIn-animation {
+  animation: 1.5s settleIn;
+}

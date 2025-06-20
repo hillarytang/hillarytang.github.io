@@ -1,16 +1,23 @@
-.bulletinBoardOuter {
-    border: 10px solid rgb(87, 52, 24);
-    background-color: #724826;
-    padding: 1rem;
+@import '../../index.scss';
+
+.BulletinBoard__Outer {
+    background-color: $wood-color;
+    box-shadow: 10px 7px 3px $wood-shading-color;
+    padding: 2rem;
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
+    background-image: $wood-texture;
+    background-size: 100%;
+    background-blend-mode: multiply;
+    margin-bottom: 2rem;
+    height: fit-content;
 }
 
 @media (max-width: 768px) {
-    .bulletinBoardOuter {
+    .BulletinBoard__Outer {
         display: flex;
         justify-content: center;
         align-items: center;

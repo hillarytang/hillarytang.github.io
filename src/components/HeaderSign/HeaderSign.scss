@@ -1,0 +1,68 @@
+@import '../../index.scss';
+
+// Structure
+.HeaderSign {
+    background-color: $wood-color;
+    box-shadow: 8px 8px 5px $wood-shading-color;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-image: $wood-texture;
+    background-size: 100%;
+    background-blend-mode: multiply;
+    padding: 2rem;
+}
+
+.HeaderSign__Default {
+    margin: 2rem;
+}
+
+.HeaderSign__ShowBottomRope {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .HeaderSign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+// Text
+.HeaderSign__Title {
+    font-family: $font-uncial, sans-serif;
+    margin: 0;
+    color: $wood-text-color;
+}
+
+.HeaderSign__Subtitle {
+    font-family: $font-quicksand, sans-serif;
+    font-weight: 100;
+    font-size: large;
+    font-style: italic;
+    margin: 0;
+    color: $wood-text-color;
+}
+
+// Ropes
+.HeaderSign__BothRopes {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderSign__SingleRope {
+//   background-color: grey;
+  width: 10px;
+  height: 2rem;
+  background-image: url(../../../public/assets/chain.svg);
+  background-repeat: repeat-y;
+  background-size: cover;
+
+}
